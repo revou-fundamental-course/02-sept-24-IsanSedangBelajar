@@ -11,10 +11,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
+    height: 100vh;
 }
 
-.countainer {
+.container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -51,7 +51,6 @@ p {
     margin: 0 5px;
     cursor: pointer;
     border-radius: 5px;
-   
 }
 
 .nav .tab:hover {
@@ -65,5 +64,43 @@ p {
 }
 
 
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+}
 
 
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .nav .tab {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav .tab {
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
